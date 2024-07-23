@@ -71,6 +71,7 @@
       <button onclick="appendToDisplay('8')">8</button> 
       <button onclick="appendToDisplay('9')">9</button> 
       <button onclick="appendToDisplay('-')"class="operator-btn">-</button> 
+        
       <button onclick="appendToDisplay('4')">4</button> 
       <button onclick="appendToDisplay('5')">5</button> 
       <button onclick="appendToDisplay('6')">6</button> 
@@ -83,6 +84,7 @@
        <button onclick="appendToDisplay('.')">.</button>
        <button onclick="calculate('=')">=</button>
        <button onclick="clearDisplay('C')"class="operator-btn">C</button>
+      
         </div>
     </div>
     <script>
@@ -98,7 +100,7 @@
                 display.value = eval(display.value);  
             }
            catch(Error){
-            display.value = "Error";
+            display.value = "why write nonesence";
         }
         }
         
