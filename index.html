@@ -18,6 +18,7 @@
            border-radius: 15px;
            max-width: 500px;
            overflow: hidden;
+           
         }
         #display{
             width: 100%;
@@ -60,32 +61,53 @@
        .operator-btn:active{
         background-color: hsl(39, 100%, 75%);
        }
+       .oyinlola{
+        color: aliceblue;
+       }
+       @media screen and (max-width: 450px) {
+       #calculator{
+        width: 500px;
+        height: 100vh;
+       }
+      .operator-btn{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+      }
+      .htn-btn{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+      }
+        }
     </style>
 </head>
 <body>
+
     <div id="calculator">
       <input id="display" readonly>
         <div id="keys">
       <button onclick="appendToDisplay('+')"class="operator-btn">+</button>
-      <button onclick="appendToDisplay('7')">7</button> 
-      <button onclick="appendToDisplay('8')">8</button> 
-      <button onclick="appendToDisplay('9')">9</button> 
+      <button onclick="appendToDisplay('7')"class="htn-btn">7</button> 
+      <button onclick="appendToDisplay('8')"class="htn-btn">8</button> 
+      <button onclick="appendToDisplay('9')"class="htn-btn">9</button> 
       <button onclick="appendToDisplay('-')"class="operator-btn">-</button> 
         
-      <button onclick="appendToDisplay('4')">4</button> 
-      <button onclick="appendToDisplay('5')">5</button> 
-      <button onclick="appendToDisplay('6')">6</button> 
+      <button onclick="appendToDisplay('4')"class="htn-btn">4</button> 
+      <button onclick="appendToDisplay('5')"class="htn-btn">5</button> 
+      <button onclick="appendToDisplay('6')"class="htn-btn">6</button> 
       <button onclick="appendToDisplay('*')"class="operator-btn">*</button>
-       <button onclick="appendToDisplay('1')">1</button> 
-       <button onclick="appendToDisplay('2')">2</button> 
-       <button onclick="appendToDisplay('3')">3</button> 
+       <button onclick="appendToDisplay('1')"class="htn-btn">1</button> 
+       <button onclick="appendToDisplay('2')"class="htn-btn">2</button> 
+       <button onclick="appendToDisplay('3')"class="htn-btn">3</button> 
        <button onclick="appendToDisplay('/')"class="operator-btn">/</button>
-       <button onclick="appendToDisplay('0')">0</button>
-       <button onclick="appendToDisplay('.')">.</button>
-       <button onclick="calculate('=')">=</button>
+       <button onclick="appendToDisplay('0')"class="htn-btn">0</button>
+       <button onclick="appendToDisplay('.')"class="htn-btn">.</button>
+       <button onclick="calculate('=')"class="htn-btn">=</button>
        <button onclick="clearDisplay('C')"class="operator-btn">C</button>
       
         </div>
+        <h1 class="oyinlola">Oyinlola's calculator</h1>
     </div>
     <script>
         const display = document.getElementById("display");
